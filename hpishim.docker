@@ -1,0 +1,18 @@
+FROM ubuntu:noble
+
+RUN sed -i 's/# deb-src/deb-src/' /etc/apt/sources.list
+RUN apt update -y
+RUN DEBIAN_FRONTEND=noninteractive apt install -y devscripts git-buildpackage software-properties-common debhelper gnu-efi sbsigntool openssl libelf-dev
+
+WORKDIR /
+RUN git clone --recursive --branch 16.0 https://github.com/rhboot/shim /shim
+
+COPY thinpro-secureboot-masterca-2021.cer /shim/
+RUN echo "shim.thinpro,1,HP,shim,16.0,https://www.hp.com/" >> /shim/data/sbat.csv
+
+WORKDIR /shim
+RUN make VENDOR_CERT_FILE=thinpro-secureboot-masterca-2021.cer
+RUN md5sum shimx64.efi
+RUN sha256sum shimx64.efi
+RUN sha1sum shimx64.efi
+
