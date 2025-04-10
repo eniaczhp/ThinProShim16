@@ -68,9 +68,9 @@ Already verified as part of the previous accepted submission.
 *******************************************************************************
 ### Who is the secondary contact for security updates, etc.?
 *******************************************************************************
-- Name: ThinPro dev
-- Position: ThinPro https://pve.proxmox.com/wiki/Security_Reporting
-- Email address: michael.frick@proxmox.com
+- Name: Michael Frick
+- Position: ThinPro Program Manager
+- Email address: michael.frick@hp.com
 
 *******************************************************************************
 ### Were these binaries created from the 16.0 shim release tar?
@@ -112,7 +112,7 @@ before enabling it.
 ### What exact implementation of Secure Boot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)
 Skip this, if you're not using GRUB2.
 *******************************************************************************
-We re-use Debian's implementation (rebuilding Grub with SBAT adapted to
+We rebuild the package base off Ubuntu's implementation (rebuilding Grub with SBAT adapted to
 differentiate the two variants).
 
 *******************************************************************************
@@ -343,7 +343,7 @@ A reasonable timeframe of waiting for a review can reach 2-3 months. Helping us 
 
 For newcomers, the applications labeled as [*easy to review*](https://github.com/rhboot/shim-review/issues?q=is%3Aopen+is%3Aissue+label%3A%22easy+to+review%22) are recommended to start the contribution process.
 *******************************************************************************
-We try to keep an eye out for issues or PRs related to the Debian side of the
+We try to keep an eye out for issues or PRs related to the upstream/Debian/Ubuntu side of the
 ecosystem and participate in other discussions where our contributions seem
 worthwhile.
 
