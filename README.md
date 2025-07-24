@@ -270,8 +270,9 @@ Hint: run `objcopy --only-section .sbat -O binary YOUR_EFI_BINARY /dev/stdout` t
 grub:
 ```
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-grub,4,Free Software Foundation,grub,2.06,https://www.gnu.org/software/grub/
-grub.thinpro,1,HP,grub2,2.06-1ubuntu18+hp1,https://www.hp.com/
+grub,5,Free Software Foundation,grub,2.12,https://www.gnu.org/software/grub/
+grub.ubuntu,2,Ubuntu,grub2,2.12-1ubuntu7,https://www.ubuntu.com/
+grub.thinpro,1,HP,grub2,2.12-1ubuntu7,https://www.hp.com/
 ```
 
 shim:
