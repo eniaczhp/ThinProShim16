@@ -1,3 +1,4 @@
 sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 fwupd,1,Firmware update daemon,fwupd,1.5.8,https://github.com/fwupd/fwupd
-fwupd.thinpro,1,HP,fwupd,1.5.8-0ubuntu1+hp3,https://www.hp.com
+fwupd.ubuntu,1,Ubuntu,fwupd,1.5.8-0ubuntu1,https://launchpad.net/ubuntu/+source/fwupd
+fwupd.thinpro,1,HP,fwupd,1.5.8-0ubuntu1+hp3,https://www.hp.com/
